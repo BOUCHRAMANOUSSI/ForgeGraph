@@ -2,23 +2,23 @@
 
 ## 1. Types d'entités à extraire
 
-| Entité | Description | Priorité |
-|--------|-------------|----------|
-| **Classe** | Nom, méthodes, classes parentes, décorateurs | 🔴 Haute |
-| **Fonction** | Nom, arguments, type de retour, async ou non | 🔴 Haute |
-| **Méthode** | Fonction à l'intérieur d'une classe | 🔴 Haute |
-| **Import** | Modules importés, noms spécifiques | 🔴 Haute |
-| **Variable globale** | Constantes et variables de module | 🟡 Moyenne |
-| **Décorateur** | @staticmethod, @property, @router.get... | 🟡 Moyenne |
+| Entité | Description | 
+|--------|-------------|
+| **Classe** | Nom, méthodes, classes parentes, décorateurs |
+| **Fonction** | Nom, arguments, type de retour, async ou non | 
+| **Méthode** | Fonction à l'intérieur d'une classe | 
+| **Import** | Modules importés, noms spécifiques | 
+| **Variable globale** | Constantes et variables de module | 
+| **Décorateur** | @staticmethod, @property, @router.get... |
 
 ## 2. Types de relations entre entités
 
-| Relation | Exemple | Priorité |
-|----------|---------|----------|
-| **Héritage** | `class Dog(Animal)` → Dog hérite de Animal | 🔴 Haute |
-| **Import** | `from app.models import User` → le fichier utilise User | 🔴 Haute |
-| **Appel de fonction** | `result = hash_password(pwd)` → appelle hash_password | 🟡 Moyenne |
-| **Composition** | Classe A contient un attribut de type Classe B | 🟢 Basse |
+| Relation | Exemple | 
+|----------|---------|
+| **Héritage** | `class Dog(Animal)` → Dog hérite de Animal |
+| **Import** | `from app.models import User` → le fichier utilise User | 
+| **Appel de fonction** | `result = hash_password(pwd)` → appelle hash_password | 
+| **Composition** | Classe A contient un attribut de type Classe B | 
 
 ## 3. Outils de parsing étudiés
 
