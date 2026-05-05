@@ -2,8 +2,7 @@
 
 > **Auteur** : Bouchra  
 > **Version** : 1.0  
-> **Date** : 2026-04-24  
-> **Statut** : À valider avec Mimoun (Intelligence) et Abdelhakim (Infrastructure)
+
 
 ---
 
@@ -43,12 +42,6 @@ def analyze_project(project_path: str, language: str = "python") -> dict:
     """
 ```
 
-### 2.2 Contraintes d'entrée
-
-| Paramètre | Type | Obligatoire | Description |
-|-----------|------|-------------|-------------|
-| `project_path` | `str` | ✅ Oui | Chemin absolu vers le dossier racine du projet |
-| `language` | `str` | Non (défaut: `"python"`) | Langage à analyser |
 
 ### 2.3 Pré-conditions
 
@@ -205,11 +198,7 @@ Ou pour un import simple :
 
 ## 5. Langages supportés
 
-| Langage | Sprint | Outil de parsing |
-|---------|--------|-----------------|
-| Python | Sprint 1 ✅ | `ast` (built-in) |
-| JavaScript | Sprint 2+ | `tree-sitter` |
-| Java | Sprint 3+ | `tree-sitter` |
+
 
 ---
 
