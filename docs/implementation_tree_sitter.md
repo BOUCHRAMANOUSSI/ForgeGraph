@@ -89,7 +89,7 @@ Si le fichier contient une erreur (ex: parenthèse manquante), Tree-sitter gén�
 
 ## 6. Structure des données extraites
 
-Le résultat du parsing est standardisé selon l'interface définie au Jour 2 :
+Le résultat du parsing est standardisé selon l'interface définie :
 
 ```json
 {
@@ -101,4 +101,3 @@ Le résultat du parsing est standardisé selon l'interface définie au Jour 2 :
 }
 ```
 
-Ce format JSON est prêt à être consommé par le module d'Orchestration & IA géré par Mimoun.
